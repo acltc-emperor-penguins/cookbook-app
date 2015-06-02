@@ -2,3 +2,5 @@
 <h2><%= @recipe.chef %></h2>
 <h3><%= @recipe.ingredients %></h3>
 <h3><%= @recipe.directions %></h3>
+<%= link_to "Edit", "/recipes/#{@recipe.id}/edit" %>
+<%= link_to "Delete", "/recipes/#{@recipe.id}", method: :delete %>

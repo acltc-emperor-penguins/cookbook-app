@@ -27,4 +27,10 @@ class RecipesController < ApplicationController
     recipe.update(title: params[:title], chef: params[:chef], ingredients: params[:ingredients], directions: params[:directions])
   end
 
+  def destroy
+    recipe_id = params[:id]
+    recipe = Recipe.find_by(id: recipe_id)
+    recipe.destroy
+  end
+
 end
