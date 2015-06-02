@@ -11,4 +11,8 @@ class RecipesController < ApplicationController
 
   def new
   end
+
+  def create
+    Recipe.create(title: params[:title], chef: params[:chef], ingredients: params[:ingredients], directions: params[:directions])
+  end
 end
