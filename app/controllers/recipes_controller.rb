@@ -15,4 +15,9 @@ class RecipesController < ApplicationController
   def create
     Recipe.create(title: params[:title], chef: params[:chef], ingredients: params[:ingredients], directions: params[:directions])
   end
+
+  def edit
+    recipe_id = params[:id]
+    @recipe = Recipe.find_by(id: recipe_id)
+  end
 end
