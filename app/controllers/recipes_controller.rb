@@ -25,6 +25,7 @@ class RecipesController < ApplicationController
     recipe_id = params[:id]
     recipe = Recipe.find_by(id: recipe_id)
     recipe.update(title: params[:title], chef: params[:chef], ingredients: params[:ingredients], directions: params[:directions])
+    redirect_to "/recipes/#{recipe_id}"
   end
 
   def destroy
