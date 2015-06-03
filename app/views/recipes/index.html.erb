@@ -1,7 +1,5 @@
 <h1>ALL The Recipes</h1>
 
-<%= link_to "Add New Recipe", "/recipes/new" %>
-
 <% @recipes.each do |recipe| %>
   <h2><%= link_to recipe.title, "/recipes/#{recipe.id}" %></h2>
   <h3><%= recipe.chef %></h3>
