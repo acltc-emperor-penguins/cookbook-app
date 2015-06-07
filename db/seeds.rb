@@ -1,6 +1,4 @@
-Recipe.destroy_all
-
-Recipe.create([
+Recipe.create!([
   {title: "Raw Eggs", chef: "Laura Parsley", ingredients: "Chicken", directions: "Squeeze the chicken", image: "http://swansonhealthcenter.com/wp-content/uploads/2011/07/Egg.jpg", prep_time: 1},
   {title: "Empty Sandwich", chef: "Jay Wengrow", ingredients: "Two slices of bread", directions: "Place slices of bread next to each other.", image: "http://www.phoenixisstrategic.com/wp-content/uploads/2013/05/blog-empty-sandwich.jpg", prep_time: 72},
   {title: "Licorice", chef: "Jean Claude Packsone", ingredients: "Licorice", directions: "Buy licroice from store.", image: "http://www.seelecttea.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/i/licorice1.jpg", prep_time: 120},
